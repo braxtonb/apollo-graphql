@@ -21,16 +21,9 @@ Application used to maintain a list of customers' name, email, and age.
 
 ### Development Setup
 
-1. `cd server && npm run dev:server` to begin node server
-2. in a second terminal window, `npm run json:server` to begin json-server that creates a REST API from a json file
-3. in a third terminal window, `cd .. && cd client && npm start` to start the front end
-
-
-### Production Setup
-
-1. `cd client && npm run build` Build front end
-2. `cd .. && cd server && npm run prod:build` Build backend
-3. `npm run prod:server` Run server in production mode, front end is hosted by server in this mode
+1. `cd server && npm run dev:server` to begin node server `port 4000`
+2. in a second terminal window, `npm run json:server` to begin json-server that creates a REST API from a json file `port 4001`
+3. in a third terminal window, `cd .. && cd client && npm start` to start the front end `port 3000`
 
 
 ### What's the point?
