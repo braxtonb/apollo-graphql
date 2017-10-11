@@ -1,0 +1,251 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.App-nav {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-inline-box;
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  font-size: 20px;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.App-nav a {
+  color: rgba(175, 47, 47, 0.15);
+  text-decoration: none;
+}
+
+.App-title {
+  color: rgba(175, 47, 47, 0.15);
+  font-weight: 300;
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.App-title.name {
+  color: rgba(175, 47, 47, 0.5);
+}
+
+
+/* ( *** > *** ) App-list */
+.App-list,
+.App-status {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+.App-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App-list li {
+  border-bottom: 1px solid rgb(237, 237, 237);
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+}
+
+.App-list li a,
+.App-list li label {
+  color: rgb(77, 77, 77);
+  display: block;
+  margin-left: 45px;
+  padding: 15px;
+}
+
+.App-list li a {
+  text-decoration: none;
+}
+
+.App-list li .toggle {
+  text-align: center;
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/*.App-list li .toggle:after {
+  content: url(data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" …="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>);
+}*/
+
+.App-list__delete {
+  background: transparent;
+  border: none;
+  color: #cc9a9a;
+  cursor: pointer;
+  display: none;
+  font-size: 24px;
+  font-weight: lighter;
+  height: 100%;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 10000;
+}
+
+.App-list li:hover .App-list__delete {
+  display: inline-block;
+}
+
+/* ( *** < *** ) App-list */
+
+
+/* ( *** > *** ) App-form */
+.App-form {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+.App-form input {
+  color: rgb(77, 77, 77);
+  display: block;
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  outline: none;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.App-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.App-form label {
+  color: rgba(180, 47, 47, 0.7);
+  font-size: 12px;
+  left: 0;
+  padding: 5px;
+  top: 0;
+  position: absolute;
+  z-index: 10000;
+}
+
+.App-form input[type="text"],
+.App-form input[type="email"],
+.App-form input[type="number"] {
+  background: transparent;
+  border-bottom: 1px solid rgb(237, 237, 237);
+  line-height: 36px;
+  padding-left: 50px;
+  width: calc(100% - 50px);
+}
+
+.App-form input[type="submit"] {
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+.App-form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(175, 47, 47, 0.15);
+}
+
+/* ( *** < *** ) App-form */
+
+.App-status {
+  line-height: 50px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.App-status > div {
+  margin-left: 45px;
+}
+
+.App-response {
+  position: relative;
+}
+
+.App-response i {
+  color: #cc9a9a;
+  font-size: 30px;
+  font-weight: lighter;
+  height: 100%;
+  left: -45px;
+  position: absolute;
+  text-align: center;
+  width: 45px;
+}
+
+.App-response i.failure:before {
+  content: '\D7';
+}
+
+.App-response i.success:before {
+  content: '\2713';
+}
+
+.App-loader {
+	display: inline-block;
+}
+
+.App-loader .loader {
+  border: 5px solid rgba(175, 47, 47, 0.15);
+  border-radius: 50%;
+  border-top: 5px solid #cc9a9a;
+  border-bottom: 5px solid #cc9a9a;
+  width: 30px;
+  height: 30px;
+
+  -webkit-animation: spin 2s linear infinite; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: spin 2s linear infinite; /* Firefox < 16 */
+      -ms-animation: spin 2s linear infinite; /* Internet Explorer */
+       -o-animation: spin 2s linear infinite; /* Opera < 12.1 */
+          animation: spin 2s linear infinite;
+}
+
+/*** SPIN ***/
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes spin {
+  0% { background-color: #00a14d; }
+  100% { background-color: transparent; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes spin {
+  0% { background-color: #00a14d; }
+  100% { background-color: transparent; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes spin {
+  0% { background-color: #00a14d; }
+  100% { background-color: transparent; }
+}
+/*** SPIN ***/

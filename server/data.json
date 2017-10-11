@@ -1,0 +1,22 @@
+{
+  "customers": [
+    {
+      "id": "3",
+      "name": "Tom Jones",
+      "email": "tom@gmail.com",
+      "age": 23
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 34,
+      "id": "rytP7hhUW"
+    },
+    {
+      "name": "Kobe Bryant",
+      "email": "blackmamba@gmail.com",
+      "age": 39,
+      "id": "Sy64zeo3W"
+    }
+  ]
+}
